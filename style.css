@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+}
+body{
+    background-color: #c9d6ff;
+    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+}
+.top{
+    display: flex;
+    height: 2rem;
+    justify-content: space-evenly;
+    margin: 5px;
+    background-color: #161c1c;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: #ffffff;
+    align-content: center;
+    justify-content: center;
+}
+
+#top{
+    height: auto;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5px;
+}
+
+.btn{
+    width: 90px;
+    font-family: 13px;
+    background-color: rgb(220, 179, 45);
+    left: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 3px solid transparent; 
+}
+.btn:hover{
+    border: 3px solid #cccccc;
+}
+
+.main{
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.box{
+    height: 18rem;
+    width: 45rem;
+    border-radius: 15px;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+#box1{
+    background-image: url(fundamental.png);
+}
+#box2{
+    background-image: url(operating.jpeg);
+}
+#box3{
+    background-image: url(DOS.png);
+}
+#box4{
+    background-image: url(algo.jpg);
+}
+#box5{
+    background-image: url(previosu.webp);
+}
+
+.box:hover{
+    border: 5px solid #c6681b;
+}
+
+.nextpage{
+    height: 25px;
+    position: absolute;
+    bottom: 5px;
+    width: 120px;
+    font-weight: 550;
+    border-radius: 3px;
+    border: 3px solid transparent;
+    color: #cccccc;
+    background-color: #161c1c;
+}
+
+footer{
+    background-color: #161c1c;
+    height: 60px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #e2e2e2;
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#last{
+    display: flex;
+    flex-direction: column;
+}
+#logo{
+    margin-left: 80px;
+    color: #c6681b;
+    font-size: 20px;
+}
+.last-text{
+    margin-left: -45px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nextpage:hover{
+    height: 30px;
+    background-color: #c9d6ff;
+    color: #c6681b;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+@media(max-width : 1000px){
+    .main{
+        height: 100rem;
+    }
+}
+
+@media(max-width : 700px){
+    #box3{
+       background-size: contain;
+    }
+}
+
+
+ /* Style for the popup modal */
+ .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  .modal-content input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .modal-content button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .modal-content button:hover {
+    background-color: #0056b3;
+  }
+
+  .xicon{
+    color: red;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+  }
+
+
+
+
+
+
